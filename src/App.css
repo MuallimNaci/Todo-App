@@ -1,38 +1,97 @@
-.App {
+body{
+  height: 100%;
+  background: linear-gradient(90deg, rgba(155,62,168,1) 32%, rgba(5,65,176,1) 100%);
+}
+
+.container{
+  border: 2px solid rgb(233, 115, 115);
+  margin: 150px auto;
+  padding: 30px;
+  border-radius: 40px;
+  width: 50%;
+}
+
+h1{
+  color: rgb(39, 126, 202);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-shadow: #9bcfdd 2px 3px;
+  font-size: 50px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input{
+  width: 100%;
+  border-radius: 10px;
+  height: 35px;
+  padding-left: 10px;
+  font-size: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul
+{
+  width: 100%;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ul>li
+{
+  height: 30px;
+  border: 1px solid black;
+  background: linear-gradient(90deg, rgba(0,198,255,1) 32%, rgba(9,49,121,1) 62%);
+  list-style-type: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.button1
+{
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  background-color: #16718a;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  padding: 6px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.button1:hover
+{
+  background-color: #e26868;
+  transition: 0.3s;
+  
+}
+
+.button2
+{
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  background-color: #e26868;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.button2:hover
+{
+  background-color: #16718a;
+  transition: 0.3s;
+  
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #000;
+}
+
+@media screen and (max-width: 500px) {
+  .container{
+    width: 80%;
   }
 }
